@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: #54677c;
+}
+
+.body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+.kocok{
+    width: 519px;
+    height: 155px;
+    margin: 25px auto auto auto;
+}
+
+.kocak{
+    text-align: center;
+    color: black;
+    font-size: 2.3em;
+}
+
+nav{
+    display: flex;
+    padding: 1.5em 4%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+nav img{
+    width: 10em;
+}
+
+.link-nav{
+    flex:1;
+    text-align: right;
+}
+
+.link-nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+
+.link-nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size:1em;
+}
+
+.link-nav ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+} 
+
+.link-nav ul li:hover::after{
+    width:100%;
+}
+
+
+.card {
+    position: relative;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin:  56px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button i {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+button.instagram {
+    margin-top: 8px;
+} 
+
+.intaran{
+    margin-left:1px;
+    margin-top:25px;
+}
+
+.aryu{
+    margin-left:8px;
+    margin-top:15px;
+}
+
+.joni{
+    margin-top:10px;
+    margin-right:10px;
+}
+
+.arimbawa{
+    margin-top:12px;
+    margin-left:5px;
+}
+
+.kertanegara{
+    margin-top:16px;
+}
+
+.nadiani{
+    margin-top:12px;
+    margin-left: 2px;
+}
+
+.pastika{
+    margin-top:15px;
+}
+
+.widarsa{
+    margin-left:15px;
+}
+
+.suryadewi{
+    margin-left:-11px;
+}
+
+.Luwih{
+    margin-top:20px;
+}
+
+.trisnadewi{
+    margin-top:15px;
+}
+
+.footer {
+    background-color: #f0f4f8;
+    color: #333;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+.top-bar span {
+    margin: 0 8px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.left-section {
+    text-align: center;
+    max-width: 200px;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.left-section p {
+    color: #666;
+    font-size: 14px;
+}
+
+.center-section {
+    text-align: center;
+}
+
+.flag {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.red-half {
+    background-color: #d10e2a;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+}
+
+.center-section p {
+    color: #555;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.right-section {
+    text-align: center;
+    max-width: 200px;
+}
+
+.right-section p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.bottom-bar {
+    background-color: #2b2b2b;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 12px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 20px;
+    letter-spacing: 0.05em;
+}
