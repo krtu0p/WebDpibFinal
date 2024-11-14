@@ -30,8 +30,6 @@ async function handleRegister(event) {
     password: password,
   };
 
-  // Log the payload
-  console.log("Register Payload:", JSON.stringify(data));
 
   // Send data to the backend
   try {
@@ -100,7 +98,6 @@ async function handleLogin(event) {
   };
 
   // Log the payload
-  console.log("Login Payload:", JSON.stringify(data));
 
   // Send login request to the backend
   try {
@@ -113,7 +110,7 @@ async function handleLogin(event) {
     });
 
     const text = await response.text();
-    console.log("Login Response Text:", text);
+    console.log("Login successful");
     const responseData = JSON.parse(text);
 
     if (response.ok && responseData.token) {
@@ -124,7 +121,7 @@ async function handleLogin(event) {
         confirmButtonText: 'OK'
       }).then(() => {
         localStorage.setItem('authToken', responseData.token);
-        window.location.href = "home.html"; // Redirect to home page after successful login
+        window.location.href = "index.html"; // Redirect to home page after successful login
       });
     } else {
       Swal.fire({
