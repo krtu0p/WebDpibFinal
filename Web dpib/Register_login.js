@@ -124,7 +124,7 @@ async function handleLogin(event) {
         confirmButtonText: 'OK'
       }).then(() => {
         localStorage.setItem('authToken', responseData.token);
-        window.location.href = "index.html"; // Redirect to home page after successful login
+        window.location.href = "home.html"; // Redirect to home page after successful login
       });
     } else {
       Swal.fire({

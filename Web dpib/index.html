@@ -1,142 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DPIB Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="icon" href="crown-solid.svg">
+    <title>Login and Register | Students DPIB Online System</title>
+    <link rel="stylesheet" href="Register_login.css">
 </head>
 <body>
-        <section class="header">
-            <nav>
-                <a href="#"><img src="konten/logoskensa.png"></a>
-                <div class="link-nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Teacher.html">Teacher</a></li>
-                        <li><a href="class.html">Class</a></li>
-                        <li><a href="Register_login.html">Logout</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="textbox">
-                <h1>DPIB Website</h1>
-                <p>Desain Permodelan dan Informasi Bangunan</p>
-                </p>
+    <div class="heroes">
+        <div class="form_box">
+            <div class="button_box">
+                <div id="toggle_btn"></div>
+                <button type="button" class="btn" onclick="Login()">Login</button>
+                <button type="button" class="btn" onclick="Register()">Register</button>
             </div>
-        </section>
-            <!-- body html -->
-            <section class="body">
-                <h1 class="kocak">Jurusan DPIB</h1>
-                <p class="kocak">Desain Permodelan dan Informasi Bangunan</p>
-
-                <div class="baris">
-                    <div class="kolom-tulisan kolom1">
-                        <img src="konten/arsitek1.jpeg" class="foto1" alt="Gambar arsitek">
-                        <h3>Fokus pada Desain dan Teknologi Konstruksi</h3>
-                        <p>DPIB adalah jurusan yang memadukan desain bangunan dengan teknologi informasi dalam bidang konstruksi. Di jurusan ini, Anda akan belajar untuk merancang dan membuat model bangunan secara digital menggunakan perangkat lunak canggih, seperti BIM (Building Information Modeling), yang memungkinkan Anda untuk membuat model 3D bangunan, menganalisisnya, dan mengelola informasi konstruksi.</p>
-                    </div>
-                    <div class="kolom-tulisan">
-                        <img src="konten/arsitek2.jpeg" class="foto2" alt="Gambar arsitek">
-                        <h3>Peluang Karier yang Luas di Industri Konstruksi</h3>
-                        <p>Lulusan DPIB memiliki peluang besar untuk bekerja di berbagai posisi dalam industri konstruksi, seperti BIM Specialist, Desainer Arsitektur, Manajer Proyek, hingga Quantity Surveyor. Dengan berkembangnya teknologi di dunia konstruksi, keterampilan dalam pemodelan digital dan pengelolaan informasi sangat dibutuhkan oleh perusahaan-perusahaan konstruksi besar, arsitek, dan pengembang properti.</p>
-                    </div>
-                    <div class="kolom-tulisan kolom1">
-                        <img src="konten/arsitek3.jpeg" class="foto1" alt="Gambar Arsitek">
-                        <h3>Ahli Teknologi  Building Information Modeling</h3>
-                        <p>Salah satu keahlian utama dalam DPIB adalah pemahaman mendalam tentang BIM, yang merupakan teknologi untuk merancang dan mengelola data bangunan dalam bentuk digital. Dengan BIM, desain bangunan tidak hanya berupa gambar, tetapi juga mencakup informasi teknis seperti struktur, material, dan jadwal pembangunan. Ini membuat seluruh proses pembangunan lebih efisien, mengurangi kesalahan, dan mempermudah kolaborasi antar tim.</p>
-                </div>
-                <div>
-                    <img src="konten/wave (4).svg">
-                </div>
-                <div>
-                    <img src="konten/wave (5).svg" class="kebalik">
-                </div>
-                <div class="baris">
-                    <div class="kolom-tulisan kolom1">
-                        <img src="konten/arsitek7.jpeg" class="foto2" alt="Gambar arsitek">
-                        <h3>Arsitek dan Perencana</h3>
-                        <p>Dengan keahlian dalam desain dan teknologi BIM, lulusan jurusan DPIB memiliki prospek karier yang luas sebagai arsitek, perencana, dan profesional lainnya dalam industri konstruksi.</p>
-                    </div>
-                    <div class="kolom-tulisan">
-                        <img src="konten/arsitek4.jpeg" class="foto1" alt="Gambar arsitek">
-                        <h3>Project Manager</h3>
-                        <p>Lulusan DPIB memiliki peluang untuk berkarier sebagai Project Manager, mengelola proyek konstruksi dengan pendekatan berbasis teknologi dan sistem informasi yang efisien.</p>
-                    </div>
-                    <div class="kolom-tulisan kolom1">
-                        <img src="konten/arsitek5.jpeg" class="foto2" alt="Gambar arsitek">
-                        <h3>Quantity Surveyor</h3>
-                        <p>Lulusan DPIB dapat mengembangkan karier sebagai Quantity Surveyor atau Estimator, menggunakan keterampilan digital dan pemodelan untuk menghitung biaya dan kebutuhan material secara lebih presisi dalam proyek konstruksi</p>
-                    </div>
-                    <div class="kolom-tulisan">
-                        <img src="konten/arsitek6.jpeg" class="foto1" alt="Gambar arsitek">
-                        <h3>Manager Technology</h3>
-                        <p>Manajer Teknologi memainkan peran penting dalam memimpin implementasi dan pengelolaan teknologi baru yang dapat meningkatkan efisiensi dan keberlanjutan dalam proyek konstruksi. Lulusan  DPIB, dengan pengetahuan tentang BIM, desain digital, dan manajemen informasi, sangat cocok untuk mengambil peran ini.</p>
-                    </div>
-                </div>
-                <div class="slider-container">
-                    <h1>Gallery</h1>
-                    <div class="slider">
-                        <div class="slides">
-                            <img src="konten/Aryudihati.png" alt="Image 1" class="slide">
-                            <img src="konten/BagusOka.png" alt="Image 2" class="slide">
-                            <img src="konten/MadeArimbawa.png" alt="Image 3" class="slide">
-                            <img src="konten/DwiraDharma.png" alt="Image 4" class="slide">
-                            <img src="konten/MadeKertanegara.png" alt="Image 5" class="slide">
-                            <img src="konten/MadeNadiani.png" alt="Image 6" class="slide">
-                            <img src="konten/MadePastika.png" alt="Image 7" class="slide">
-                            <img src="konten/MadeWidarsa.png" alt="Image 8" class="slide">
-                            <img src="konten/Mudiasa.png" alt="Image 9" class="slide">
-                            <img src="konten/Suryadewi.png" alt="Image 10" class="slide">
-                            <img src="konten/SutrisnaPutra.png" alt="Image 11" class="slide">
-                            <img src="konten/TrisnaDewi.png" alt="Image 12" class="slide">
-                            <img src="konten/WayanLuwih.png" alt="Image 13" class="slide">
-                        </div>
-                        <button class="sebelum" onclick="prevSlide()">&#10094;</button>
-                        <button class="sesudah" onclick="nextSlide()">&#10095;</button>
-                    </div>
-                </div>
-                
-            </section> 
-            <div class="footer">
-                <div class="top-bar">
-                    <span>SMK NEGERI 1 DENPASAR</span>
-                    <span>• • •</span>
-                    <span>SMK NEGERI 1 DENPASAR</span>
-                    <span>• • •</span>
-                    <span>SMK NEGERI 1 DENPASAR</span>
-                </div>
-                <div class="footer-content">
-                    <div class="left-section">
-                        <img src="konten/logoskensareal.png" alt="Logo" class="logo">
-                        <h1>SKENSA</h1>
-                        <p>SMK NEGERI 1 DENPASAR</p>
-                    </div>
-                    <div class="center-section">
-                        <div class="flag">
-                            <div class="red-half"></div>
-                        </div>
-                        <p>DPIB Website</p>
-                    </div>
-                    <div class="right-section">
-                        <p><strong>Alamat Sekolah</strong><br>84 Jalan Cokrominoto<br>80116 Denpasar Bali</p>
-                        <p><strong>Kontak Kami</strong><br>081 339 276 998</p>
-                        <p><strong>Sosial Media</strong></p>
-                        <div class="social-icons">
-                            <a href="#"><img src="logo/tiktok-brands-solid.svg" alt="TikTok"></a>
-                            <a href="#"><img src="logo/instagram-brands-solid.svg" alt="Instagram"></a>
-                            <a href="#"><img src="logo/tiktok-brands-solid.svg" alt="Facebook"></a>
-                            <a href="#"><img src="logo/youtube-brands-solid.svg" alt="YouTube"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom-bar">
-                    <p>&copy; 2023, STB Developer Team</p>
-                </div>
+            <div class="logo">
+                <img src="logoskensa.png">
+                <h5>Desain Pemodelan Informasi bangunan</h5>
+                <p>Online Profile for Student</p>
             </div>
-        <script src="index.js"></script>
+            <form id="Login" class="input" action="home.html">
+                <input type="text" class="input-text" placeholder="Username or E-Mail" required>
+                <input type="password" class="input-text" placeholder="Password" required>
+                <div class="forgot-password-container">
+                   <p class="forgot-password">Forgot Password?</p>
+                    <div class="forgot-password-tooltip">
+                        Silahkan datang ke Ruang Administrasi untuk mereset password anda.
+                    </div>
+                </div>                <button type="submit" class="submit">Log in</button>
+            </form>
+            <form id="Register"  class="input" action="Register_login.html">
+                <input type="text" class="input-text" placeholder="Username" required>
+                <input type="email" class="input-text" placeholder="E-mail" required>
+                <input type="password" class="input-text" placeholder="Password" required>
+                <input type="checkbox" class="cekbok"><span>I agree to the terms & conditions</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+            <p class="copyright">©2023, STB Developer Team</p>
+        </div>
+   </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="Register_login.js"></script>
+</body>
 </html>
